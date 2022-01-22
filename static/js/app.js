@@ -22,4 +22,28 @@ function buildTable(data) {
         }
         );
     });
-}
+};
+// 11.5.3 filter 
+function handleClick() {
+    // use new funtion and d3 to have the users clicks on th filter data react and manipulate table 
+    // grab the datetime value from the filter 
+    let date=d3.select("#datetime").property("value");
+    // use tableData variable from data.js as a blank slate, if no filter is selected entier table will be returned 
+    let filteredData=tableData;
+
+    // 11.5.3, check to see if the date was entered and filter the data using that date 
+    if (date) {
+        //apply 'filter' to the table data to only keep the rows where the 'datetime' value matched the filter value 
+        filteredData = filtereddata.filter(row => row.datetime===date);
+    };
+
+    //rebuild the table using the filtered data, note if no date was entered then filteredData will just be the original table data
+    buildTable(filteredData);
+};
+
+//tell the handle click function to be applied when the filter button is clicked, D3 listens 
+//attach an event to listen for the form button 
+d3.selectAll("#filter-btn").on("click", handleClick);
+
+//build the original/ unfiltered table when the page loads 
+buildTable(tableData);
