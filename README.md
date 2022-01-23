@@ -1,7 +1,7 @@
 # UFOs
 Module 11- JavaScript, HTML, Bootstraps and CSS
 ## Overview of Project 
-Dana is an data journalist who got to write a peice about UFO sightings. She was only provided a JavaScript file of recorded sightings. For each siting details like the date, city, state, country, shape, duration, and comments from those that witnessed the sighting were provided. Her end result was not only a great article but an interactive website that allows readers to also reviews the recorded intances. She created a dynamic table to filter the sightings by some of thier conditions like: the date it occured, city, state, country and shape. 
+Dana is an data journalist who got to write a peice about UFO sightings. She was only provided a JavaScript file of recorded sightings. For each sighting details like the date, city, state, country, shape, duration, and comments from those that witnessed the sighting were provided. Her end result was not only a great article but an interactive website that allows readers to also reviews the recorded intances. She created a dynamic table to filter the sightings by some of thier conditions like: the date it occured, city, state, country and shape. 
 
 ## Results- How to Use the Search Filters 
 After loading the webiste, find the filter options on the left hand side of the screen. Within the text boxes enter the filters you would like to apply. For formatting your input follow the prompts in light grey text. Filters can be applied one by one, and you will see the table adapts each time you press enter after the filter. Apply as many or as little filters as you want. When you are done hit the 'UFO Sightings' text in the top upper left, this button will clear your search filters. 
